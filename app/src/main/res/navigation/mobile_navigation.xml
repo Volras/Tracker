@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_expenses">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.akree.expensetracker.fragments.ProfileFragment"
+
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_statistics"
+        android:name="com.akree.expensetracker.fragments.StatisticsFragment"
+        android:label="@string/statistics"
+        tools:layout="@layout/fragment_statistics" />
+
+    <fragment
+        android:id="@+id/nav_expenses"
+        android:name="com.akree.expensetracker.fragments.ExpensesFragment"
+        android:label="@string/expenses"
+        tools:layout="@layout/fragment_expenses" />
+</navigation>
